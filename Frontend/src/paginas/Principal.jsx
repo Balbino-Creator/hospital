@@ -1,3 +1,4 @@
+import Footer from "../componentes/Footer";
 import Navegacion from "../componentes/Navegacion";
 
 export default function Principal() {
@@ -48,6 +49,21 @@ export default function Principal() {
                     </article>
                 </div>
             </main>
+            <section className="w-full bg-gray-100 py-12">
+                <div className="mx-auto max-w-4xl p-8 bg-white rounded-xl shadow-lg">
+                    <h2 className="text-3xl font-bold text-center mb-8">¡Contáctanos!</h2>
+                    <form action="#" className="space-y-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Nombre" className="border-2 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-500"/>
+                            <input type="email" placeholder="Correo" className="border-2 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-500"/>
+                        </div>
+                        <input type="tel" placeholder="Teléfono" className="border-2 rounded-lg w-full py-2 px-4 focus:outline-none focus:border-blue-500"/>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje" className="border-2 rounded-lg w-full py-2 px-4 focus:outline-none focus:border-blue-500"></textarea>
+                        <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </section>
+            <Footer/>
         </>
     )
 }
