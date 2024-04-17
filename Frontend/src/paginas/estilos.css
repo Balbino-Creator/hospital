@@ -40,6 +40,15 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    padding: 0.5em;
+    transition: all 1s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    background-color: white;
+    border-radius: 2em;
+    transition: all 1s;
 }
 
 section {
